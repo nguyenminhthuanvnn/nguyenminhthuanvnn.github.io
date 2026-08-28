@@ -1,0 +1,4 @@
+# app-ads.txt for NetSoftTouch
+# Developer website: https://nguyenminhthuanvnn.github.io/
+# Apps: NeoVid Converter (com.neovid.converter)
+google.com, pub-4374994073416182, DIRECT, f08c47fec0942fa0
