@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Float Video Player — NetSoftTouch</title>
+<meta name="description" content="Float Video Player is a floating-window video and audio player for Android by NetSoftTouch. Watch in a resizable pop-out window over other apps, with background audio, an equalizer and a built-in file browser.">
+<link rel="canonical" href="https://nguyenminhthuanvnn.github.io/float-video-player/">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e3e6ea;
+    --fg: #16191d; --muted: #5c636d; --accent: #1a56db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101317; --surface: #171b21; --border: #272d36;
+      --fg: #e9ecf1; --muted: #9aa3af; --accent: #7aa2f7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 72px; }
+  .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin: 24px 0 36px; }
+  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .tag { color: var(--muted); margin: 0; }
+  .meta { color: var(--muted); font-size: 0.88rem; margin-top: 14px; }
+  a { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .item {
+    border: 1px solid var(--border); background: var(--surface);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .item strong { display: block; font-size: 0.95rem; font-weight: 600; }
+  .item span { color: var(--muted); font-size: 0.88rem; }
+  ul { padding-left: 20px; color: var(--muted); }
+  li { margin: 6px 0; }
+  .note {
+    border-left: 3px solid var(--border); padding: 2px 0 2px 16px;
+    color: var(--muted); font-size: 0.94rem;
+  }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../">&larr; NetSoftTouch</a>
+
+  <header>
+    <h1>Float Video Player</h1>
+    <p class="tag">A floating-window video and audio player for Android. Watch in a movable, resizable window on top of whatever else you are doing, or keep listening with the screen off.</p>
+    <p class="meta">By NetSoftTouch &middot; Package <code>com.floatvideo.free</code></p>
+  </header>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="item"><strong>Floating window</strong><span>Movable, resizable, over any other app</span></div>
+    <div class="item"><strong>Multi-window</strong><span>Several videos at once, or one at a time</span></div>
+    <div class="item"><strong>Background audio</strong><span>Keep playing with the screen off</span></div>
+    <div class="item"><strong>Music library</strong><span>Browse and play your device audio</span></div>
+    <div class="item"><strong>File browser</strong><span>Internal storage, SD cards and USB drives</span></div>
+    <div class="item"><strong>Playlists</strong><span>Build and manage your own</span></div>
+    <div class="item"><strong>Equalizer &amp; sleep timer</strong><span>Presets, and stop playback on a timer</span></div>
+    <div class="item"><strong>Auto-resume</strong><span>Picks up where you left off</span></div>
+  </div>
+
+  <p class="note">
+    Plays MP4, MKV, FLV, AVI, MOV, WMV, TS, M2TS, WebM and more, from local storage, your file
+    manager, or the Share menu of another app. Playback is controlled from the notification
+    panel, the lock screen, and headset or Bluetooth media buttons.
+  </p>
+
+  <h2>Ads and privacy</h2>
+  <ul>
+    <li>The app is free and supported by ads (Google AdMob). There is no paid tier.</li>
+    <li>Users in the EEA and the UK are asked for consent before any personalised ad is shown, and can change or withdraw that choice at any time from <em>Settings &rarr; Ad Privacy Settings</em> in the app.</li>
+    <li>Anonymous usage and crash reporting can be turned off from <em>Settings &rarr; Usage &amp; crash reporting</em>.</li>
+    <li>Full details are in the <a href="https://nguyenminhthuanvnn.github.io/netsofttouch/privacy-policy.html">Float Video Player privacy policy</a>.</li>
+  </ul>
+
+  <h2>Support</h2>
+  <ul>
+    <li>Email <a href="mailto:nguyenminhthuanvnn@gmail.com">nguyenminhthuanvnn@gmail.com</a> with questions or bug reports.</li>
+    <li>Please include your device model, Android version and the app version from Settings.</li>
+  </ul>
+
+  <h2>Licensing</h2>
+  <ul>
+    <li>Float Video Player uses LibVLC for Android <code>3.7.5</code>, licensed under the GNU Lesser General Public License v2.1 or later. LibVLC is used unmodified and linked dynamically.</li>
+    <li>The complete corresponding source for that version is published by VideoLAN at
+      <a href="https://code.videolan.org/videolan/vlc-android">code.videolan.org/videolan/vlc-android</a>.</li>
+    <li>A copy of the corresponding source is also available on request for at least three years from <a href="mailto:netsofttouch@gmail.com">netsofttouch@gmail.com</a>.</li>
+    <li>The full licence texts, and the statement covering your right to relink the app against a modified LibVLC, are shipped inside the app under <em>Settings &rarr; Open Source Licenses</em>. That copy is the authoritative one.</li>
+    <li>VLC&reg; and VideoLAN&reg; are registered trademarks of the VideoLAN non-profit organization. Float Video Player is an independent application and is not affiliated with, endorsed by, or sponsored by VideoLAN.</li>
+  </ul>
+
+  <footer>
+    <a href="../">NetSoftTouch</a>
+    <a href="https://nguyenminhthuanvnn.github.io/netsofttouch/privacy-policy.html">Privacy Policy</a>
+    <div style="margin-top:14px">&copy; 2026 NetSoftTouch</div>
+  </footer>
+
+</div>
+</body>
+</html>
