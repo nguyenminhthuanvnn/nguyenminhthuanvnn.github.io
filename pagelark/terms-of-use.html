@@ -35,6 +35,12 @@
   ul { padding-left: 20px; color: var(--muted); }
   li { margin: 6px 0; }
   p { color: var(--fg); margin: 12px 0; }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--surface);
+    padding: 12px 16px; margin: 20px 0; border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+  }
+  .note strong { color: var(--fg); }
   footer {
     margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
     color: var(--muted); font-size: 0.9rem;
@@ -73,13 +79,27 @@
   </ul>
 
   <h2>5. Acceptable Use and Restrictions</h2>
-  <p>You agree not to:</p>
+  <p><strong>Subject in all cases to Section 5.1 below</strong>, which prevails over this Section 5 wherever the two would conflict, you agree not to:</p>
   <ul>
-    <li>Decompile, reverse engineer, disassemble, or attempt to derive the source code of the App, except to the extent permitted by applicable law.</li>
-    <li>Modify, adapt, translate, or create derivative works based upon the App.</li>
+    <li>Decompile, reverse engineer, disassemble, or attempt to derive the source code of the App, except to the extent permitted by applicable law or by Section 5.1.</li>
+    <li>Modify, adapt, translate, or create derivative works based upon the App, except to the extent permitted by Section 5.1.</li>
     <li>Use the App for any illegal, unauthorized, or infringing purpose.</li>
-    <li>Interfere with or attempt to circumvent any security features, license checks, or digital rights management mechanisms.</li>
+    <li>Interfere with or attempt to circumvent any security features, license checks, or digital rights management mechanisms, except that replacing a bundled open-source library as described in Section 5.1 is expressly permitted and is not a circumvention of any such mechanism.</li>
   </ul>
+
+  <h3>5.1 Open-source components: your rights to modify and reverse engineer</h3>
+  <p>Pagelark includes open-source software. Each such component remains governed by its own licence, and where that licence grants you rights that are broader than these Terms, <strong>that licence governs and these Terms do not restrict those rights.</strong> The open-source components, their licences and the full licence texts are listed in the App under <strong>Settings &rarr; Open-source licences</strong>.</p>
+  <p>One of those components carries conditions that these Terms must satisfy, and this section is how they are satisfied. Pagelark uses <strong>LAME 3.100</strong>, an MP3 encoder, to produce MP3 files during audio export. LAME is free software licensed under the <strong>GNU Library General Public License, version 2 (LGPL v2)</strong>. It is unmodified, and it is bundled as its own separate shared library (<code>libmp3lame.so</code>) rather than linked into the App, specifically so that it can be replaced.</p>
+  <div class="note">
+    <p><strong>We therefore expressly permit you to:</strong></p>
+    <ul>
+      <li><strong>modify the App for your own use</strong> — including replacing the bundled <code>libmp3lame.so</code> with a version of LAME that you have built or obtained yourself; and</li>
+      <li><strong>reverse engineer the App for the purpose of debugging such modifications</strong>, including decompiling or disassembling it to the extent needed to do so.</li>
+    </ul>
+    <p>These two permissions are granted to satisfy Section 6 of the LGPL v2, which allows the App to be distributed under terms of our choosing only if those terms &ldquo;permit modification of the work for the customer&rsquo;s own use and reverse engineering for debugging such modifications&rdquo;. Nothing elsewhere in these Terms limits them.</p>
+  </div>
+  <p>A copy of the complete corresponding source code for LAME is available from <a href="https://lame.sourceforge.io/">lame.sourceforge.io</a>, and may also be requested from us at <a href="mailto:nguyenminhthuanvnn@gmail.com">nguyenminhthuanvnn@gmail.com</a>.</p>
+  <p>These permissions apply to modification and debugging for your own use. They are not a licence to redistribute the App or a modified version of it, to remove or alter attribution or licence notices, or to redistribute the proprietary parts of the App — the Pagelark code, design and assets described in Section 3 — and they do not affect the restrictions in Section 5 that Section 5.1 does not expressly override.</p>
 
   <h2>6. Third-Party Services and External Content</h2>
   <p>Pagelark integrates third-party services including Google AdMob, Google Firebase (Analytics &amp; Crashlytics), and Google Play Billing. Your use of these services is subject to their respective terms and privacy policies. When you fetch web articles via URL, you are accessing third-party websites that are independent of NetSoftTouch.</p>
