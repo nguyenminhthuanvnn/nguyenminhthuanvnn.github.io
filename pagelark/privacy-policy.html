@@ -56,7 +56,7 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tag">How Pagelark collects, uses, and protects your information.</p>
-    <p class="meta">Effective date: September 12, 2026 &middot; Application: <strong>Pagelark</strong> (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
+    <p class="meta">Effective date: September 30, 2026 &middot; Application: <strong>Pagelark</strong> (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
   </header>
 
   <div class="note">
@@ -82,7 +82,7 @@
     <li>IP address and coarse (approximate) location.</li>
     <li>Ad interaction data (impressions, clicks, and ad performance diagnostics).</li>
   </ul>
-  <p><strong>Consent Management (EEA, UK, Switzerland, and US State Laws):</strong> We implement the Google User Messaging Platform (UMP) SDK. Users in covered jurisdictions are prompted on first launch to make their choices regarding personalized advertising, cookies, and device identifiers. You can change or withdraw your consent at any time inside the app via <em>Settings &rarr; Privacy &amp; telemetry &rarr; Privacy Options (Ad Consent)</em>.</p>
+  <p><strong>Consent Management (EEA, UK and Switzerland):</strong> We implement the Google User Messaging Platform (UMP) SDK. Users in the EEA, the UK and Switzerland are prompted on first launch to make their choices regarding personalized advertising, cookies, and device identifiers. You can change or withdraw your consent at any time inside the app via <em>Settings &rarr; Privacy &amp; telemetry &rarr; Privacy Options (Ad Consent)</em>.</p>
   <p><strong>Ad-Free Option:</strong> Users who upgrade to <strong>Pagelark Pro</strong> will have all advertising completely disabled, and no ad requests are made to AdMob.</p>
 
   <h3>B. Anonymous Analytics (Firebase Analytics)</h3>
@@ -109,13 +109,14 @@
     <li><strong>User-Initiated Article Fetch:</strong> When you share or paste a web article URL to read, the app makes a direct HTTP request to download the HTML content from that specific web page to parse the article text. No personal identifiers or other documents are sent.</li>
     <li><strong>Ad Serving &amp; Telemetry:</strong> Communicating with Google AdMob and Firebase as described above.</li>
     <li><strong>Billing Verification:</strong> Verifying Pro entitlements with the Google Play Store.</li>
+    <li><strong>User-Initiated OCR Language Download:</strong> Text recognition for Latin-script languages, Chinese, Japanese, Korean, Devanagari, Vietnamese and Russian is built into the app. When you choose to scan in another language, and only after you tap to download it, the app downloads that language&rsquo;s public recognition model (a <code>.traineddata</code> file from the open-source <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tesseract-ocr/tessdata_fast</a> project) from GitHub (<code>raw.githubusercontent.com</code>) over HTTPS, and stores it in the app&rsquo;s private storage. This is a plain file download: no document, image, scanned text or personal identifier is sent. As with any web request, GitHub receives your IP address and standard request information, which is handled under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>. Downloaded models can be removed by clearing the app&rsquo;s data or uninstalling it.</li>
   </ul>
 
   <h2>4. Device Permissions and Why They Are Needed</h2>
   <p>Pagelark requests only the minimum permissions necessary for its functionality:</p>
   <ul>
     <li><code>android.permission.INTERNET</code>: Required for fetching web articles, displaying ads (free version), verifying Pro purchases, and transmitting crash/analytics diagnostics.</li>
-    <li><code>android.permission.CAMERA</code>: Required solely when you choose to use the Camera OCR feature to extract text from a physical document via on-device ML Kit text recognition. Camera frames are processed in temporary memory and never stored or uploaded. This feature is optional.</li>
+    <li><code>android.permission.CAMERA</code>: Required solely when you choose to use the Camera OCR feature to extract text from a physical document via on-device text recognition (Google ML Kit and the open-source Tesseract OCR engine, both running entirely on your device). A captured page is kept only temporarily in the app&rsquo;s private cache while its text is read, and is then deleted; it is never uploaded or shared. This feature is optional.</li>
     <li><code>android.permission.POST_NOTIFICATIONS</code> &amp; <code>android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: Required on Android 13+ to show media player controls in the notification drawer and lock screen during background playback.</li>
     <li><code>android.permission.WAKE_LOCK</code>: Prevents the device from sleeping while reading audio is actively playing.</li>
     <li><strong>Storage / Document Access:</strong> Pagelark uses the standard Android Storage Access Framework (SAF) system picker, allowing you to select specific files without granting the app broad access to your entire storage.</li>
