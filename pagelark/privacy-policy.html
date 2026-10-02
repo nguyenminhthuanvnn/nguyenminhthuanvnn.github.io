@@ -56,7 +56,7 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tag">How Pagelark collects, uses, and protects your information.</p>
-    <p class="meta">Effective date: October 1, 2026 &middot; Application: <strong>Pagelark</strong> (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
+    <p class="meta">Effective date: October 2, 2026 &middot; Application: <strong>Pagelark</strong> (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
   </header>
 
   <div class="note">
@@ -108,8 +108,9 @@
   <h3>D. In-App Purchases (Google Play Billing)</h3>
   <p>If you purchase or subscribe to Pagelark Pro, the transaction is processed securely through Google Play In-App Billing. NetSoftTouch does not receive, store, or have access to your credit card, bank account, or billing details. All financial transactions are managed entirely by Google according to the Google Play Terms of Service.</p>
 
-  <h3>E. On-Device Text Recognition (Google ML Kit)</h3>
-  <p>Camera OCR uses Google ML Kit&rsquo;s text-recognition models, which are bundled inside the app and run entirely on your device: the image and the recognised text are never sent to Google. Like other Google SDKs, ML Kit sends Google limited technical information to monitor and improve the SDK &mdash; device model and OS version, app package name and version, a per-installation identifier, which ML Kit feature was used, and performance and error metrics.</p>
+  <h3>E. On-Device Text Recognition and Language Detection (Google ML Kit, Tesseract)</h3>
+  <p>Camera OCR reads pages with Google ML Kit&rsquo;s text-recognition models and, for languages ML Kit does not cover, with the open-source Tesseract OCR engine and its public <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tessdata_fast</a> language models. Every one of these models is bundled inside the app: scanning, in any language, downloads nothing and makes no network request, and the image and the recognised text are never sent to Google or anyone else. To pick a voice for a document that does not say what language it is in, Pagelark uses Google ML Kit&rsquo;s Language Identification, which is also bundled and runs on your device; the text it looks at is never sent anywhere.</p>
+  <p>Like other Google SDKs, ML Kit sends Google limited technical information to monitor and improve the SDK &mdash; device model and OS version, app package name and version, a per-installation identifier, which ML Kit feature was used, and performance and error metrics.</p>
 
   <p>For more details on how Google collects and uses information when you use apps integrated with Google services, please review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
@@ -119,8 +120,8 @@
     <li><strong>User-Initiated Article Fetch:</strong> When you share or paste a web article URL to read, the app makes a direct HTTP request to download the HTML content from that specific web page to parse the article text. No personal identifiers or other documents are sent; as with any web request, that website receives your IP address and standard request information, and its own privacy policy applies. The app only connects over encrypted HTTPS.</li>
     <li><strong>Ad Serving &amp; Telemetry:</strong> Communicating with Google AdMob and Firebase as described above.</li>
     <li><strong>Billing Verification:</strong> Verifying Pro entitlements with the Google Play Store.</li>
-    <li><strong>User-Initiated OCR Language Download:</strong> Text recognition for Latin-script languages, Chinese, Japanese, Korean, Devanagari, Vietnamese and Russian is built into the app. When you choose to scan in another language, and only after you tap to download it, the app downloads that language&rsquo;s public recognition model (a <code>.traineddata</code> file from the open-source <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tesseract-ocr/tessdata_fast</a> project) from GitHub (<code>raw.githubusercontent.com</code>) over HTTPS, and stores it in the app&rsquo;s private storage. This is a plain file download: no document, image, scanned text or personal identifier is sent. As with any web request, GitHub receives your IP address and standard request information, which is handled under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>. Downloaded models can be removed by clearing the app&rsquo;s data or uninstalling it.</li>
   </ul>
+  <p>Camera OCR is not among them: every text-recognition model ships inside the app (Section 2E), so scanning a page never uses the network.</p>
 
   <h3>Information shown to other parts of your device</h3>
   <p>These stay on your device and your own connected accessories, and are not sent to us:</p>
@@ -163,7 +164,7 @@
 
   <h3>C. How Data Is Protected</h3>
   <ul>
-    <li>Everything the app sends over the network &mdash; to Google&rsquo;s services, to websites you fetch, and to GitHub for OCR models &mdash; travels over encrypted connections (HTTPS/TLS); the app does not allow unencrypted network traffic.</li>
+    <li>Everything the app sends over the network &mdash; to Google&rsquo;s services and to websites you fetch &mdash; travels over encrypted connections (HTTPS/TLS); the app does not allow unencrypted network traffic.</li>
     <li>Your documents and library are kept in the app&rsquo;s private storage, which Android prevents other apps from reading, and are excluded from Android cloud backup.</li>
     <li>We never receive your documents, so there is no copy of them on any server of ours to be exposed.</li>
   </ul>
