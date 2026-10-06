@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Pagelark</title>
-<meta name="description" content="Privacy Policy for Pagelark (com.pagelark.reader) for Android by NetSoftTouch. Learn how we handle your data, permissions, and on-device privacy.">
+<meta name="description" content="Privacy Policy for Pagelark (com.pagelark.reader) for Android and iOS by NetSoftTouch. Learn how we handle your data, permissions, and on-device privacy.">
 <link rel="canonical" href="https://nguyenminhthuanvnn.github.io/pagelark/privacy-policy.html">
 <style>
   :root {
@@ -56,8 +56,10 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tag">How Pagelark collects, uses, and protects your information.</p>
-    <p class="meta">Effective date: October 2, 2026 &middot; Application: <strong>Pagelark</strong> (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
+    <p class="meta">Effective date: October 6, 2026 &middot; Application: <strong>Pagelark</strong> for Android and iOS (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong></p>
   </header>
+
+  <p>This policy covers Pagelark on both Android (Google Play) and iPhone and iPad (the App Store). The two apps work the same way and collect the same kinds of data. Where they differ, the text says so with <strong>On Android</strong> or <strong>On iOS</strong>. A <a href="#vi">short summary in Vietnamese</a> is at the end.</p>
 
   <div class="note">
     <strong>Summary:</strong> Pagelark is designed with an on-device first architecture. Your documents, scanned texts, and reading files are processed entirely on your device. We do not operate a user account system, and your document content is never uploaded to any remote server or shared with third parties.
@@ -67,9 +69,9 @@
   <p>To ensure complete privacy for your reading materials:</p>
   <ul>
     <li><strong>Document Content &amp; Text:</strong> All files you open or import (PDF, EPUB, DOCX, TXT), clipboard text you paste, and physical pages you scan are parsed, stored, and rendered strictly on your local device.</li>
-    <li><strong>Text-to-Speech Audio:</strong> Voice synthesis is generated locally using your device's built-in Text-to-Speech (TTS) engine (such as Google Text-to-Speech). Pagelark only picks voices that the engine reports as working offline, so the text being read is not sent to a cloud speech service, and speech audio is never streamed to or stored on external servers.</li>
+    <li><strong>Text-to-Speech Audio:</strong> Voice synthesis is generated locally using your device's built-in Text-to-Speech (TTS) engine. <strong>On Android</strong>, this is the system engine (such as Google Text-to-Speech), and Pagelark only picks voices that the engine reports as working offline. <strong>On iOS</strong>, Pagelark uses Apple&rsquo;s built-in voices, which are installed on the device and run there. Either way, the text being read is not sent to a cloud speech service, and speech audio is never streamed to or stored on external servers.</li>
     <li><strong>User Accounts &amp; Profiles:</strong> Pagelark does not require registration, login, email address, password, or profile creation.</li>
-    <li><strong>Your Library, Reading Progress &amp; Search Queries:</strong> Your documents, bookmarks, reading positions, favourites and the words you search for remain solely in your device&rsquo;s private local database (Room / SQLite). The only usage information that leaves the device is the limited, content-free statistics described in Section 2B, and only while analytics is switched on.</li>
+    <li><strong>Your Library, Reading Progress &amp; Search Queries:</strong> Your documents, bookmarks, reading positions, favourites and the words you search for remain solely in your device&rsquo;s private local database (SQLite). The only usage information that leaves the device is the limited, content-free statistics described in Section 2B, and only while analytics is switched on.</li>
   </ul>
 
   <h2>2. Information Collected and Third-Party Services</h2>
@@ -78,18 +80,19 @@
   <h3>A. Advertising (Google AdMob)</h3>
   <p>The free version of Pagelark displays advertisements served by Google AdMob. To provide relevant ads and prevent fraud, Google Mobile Ads SDK may collect and process:</p>
   <ul>
-    <li>Device identifiers (such as the Google Advertising ID / GAID).</li>
+    <li>Device identifiers. <strong>On Android</strong>, this is the Google Advertising ID (GAID). <strong>On iOS</strong>, it is Apple&rsquo;s Identifier for Advertisers (IDFA), and only if you allow tracking when the app asks (see below).</li>
     <li>IP address and coarse (approximate) location.</li>
     <li>Ad interaction data (impressions, clicks, and ad performance diagnostics).</li>
   </ul>
   <p>Google and its advertising partners may use cookies, device identifiers such as the advertising ID, and similar technologies to serve ads, including ads based on your use of this and other apps and websites (personalized ads), and to measure them. You can opt out of personalized advertising in <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Google My Ad Center</a>, and reset or delete your advertising ID in Android Settings &rarr; Privacy &rarr; Ads. Only ads rated suitable for general audiences are requested.</p>
+  <p><strong>App Tracking Transparency (iOS):</strong> On iPhone and iPad, Pagelark asks for permission through Apple&rsquo;s App Tracking Transparency prompt before the IDFA can be read. It asks only if you use the free version and only after any consent form described below. If you choose <em>Ask App Not to Track</em>, the IDFA is not read, and you still get ads, but they are less tailored to you. You can change this choice at any time in iOS <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em>.</p>
   <p><strong>Consent Management:</strong> We use Google&rsquo;s User Messaging Platform (UMP), a Google-certified consent management platform. Users in the EEA, the UK and Switzerland &mdash; and in any other region where Google reports that a privacy choice is required &mdash; are asked when they first open the app, before any ad is requested, to make their choices regarding personalized advertising, cookies, and device identifiers. You can change or withdraw your consent at any time inside the app via <em>Settings &rarr; Privacy &amp; telemetry &rarr; Privacy Options (Ad Consent)</em>.</p>
   <p><strong>Ad-Free Option:</strong> Users who upgrade to <strong>Pagelark Pro</strong> see no ads, and the app makes no ad requests to AdMob. The Mobile Ads and consent SDKs remain part of the app and may still start up and contact Google (for example, to check whether a consent choice is required in your region), but no ad is loaded or shown.</p>
 
   <h3>B. Usage Analytics (Firebase Analytics)</h3>
-  <p>We use Google Firebase Analytics to understand how the app is used and where it needs improving. Analytics data is <strong>pseudonymous</strong>: it is tied to a random app-instance identifier and device identifiers (which may include the advertising ID) rather than to your name, email address or any account &mdash; Pagelark has none &mdash; and we look at it only in aggregate. It consists of:</p>
+  <p>We use Google Firebase Analytics to understand how the app is used and where it needs improving. Analytics data is <strong>pseudonymous</strong>: it is tied to a random app-instance identifier and device identifiers rather than to your name, email address or any account &mdash; Pagelark has none &mdash; and we look at it only in aggregate. <strong>On Android</strong>, these device identifiers may include the advertising ID. <strong>On iOS</strong>, Pagelark&rsquo;s analytics is built without advertising-identifier support and never reads the IDFA. It consists of:</p>
   <ul>
-    <li><strong>Automatic data</strong> collected by the Firebase SDK: app opens, sessions and their duration, app version, device model, operating system version, language, approximate country (derived from IP address), and whether the app was installed from Google Play.</li>
+    <li><strong>Automatic data</strong> collected by the Firebase SDK: app opens, sessions and their duration, app version, device model, operating system version, language, approximate country (derived from IP address), and, on Android only, whether the app was installed from Google Play.</li>
     <li><strong>Screens viewed</strong> in the app (the screen name only, never what is on it).</li>
     <li><strong>Feature events with content-free values:</strong> where a document came from (file, paste, scan or web link) and its format; its size and import time as broad ranges (for example &ldquo;10k&ndash;50k characters&rdquo;); the type of any import error; playback speed and the language of the voice used; listening time as a broad range; sleep-timer length; the number of search results as a broad range (never the search words); audio export format; which screen opened the Pro page; purchases and restores (the plan, never payment details); and which ad format was shown on which screen.</li>
     <li><strong>Three user properties:</strong> whether you have Pro, your library size as a broad range, and which text-to-speech engine app is your system default.</li>
@@ -105,12 +108,13 @@
   <p>To diagnose and fix unexpected errors and crashes, Pagelark uses Firebase Crashlytics. When a crash occurs, Crashlytics collects technical diagnostics including device model, operating system version, memory state, and stack traces.</p>
   <p>A crash report also carries a random installation identifier, the app version, whether you have Pro, your default text-to-speech engine app, and a few short technical log lines from just before the crash (counts, indices and states; anything shaped like a file path, web address or quoted text is removed before it is recorded). Errors the app records itself are reported by their type only, without any message. Crash reports are designed never to contain your document content, titles or file names. Crash reporting is governed by the same single choice as analytics, described in Section 2B above — including being switched off by default where consent is required — and you can toggle it off at any time by selecting <em>DON'T SHARE</em> under <em>Settings &rarr; Privacy &amp; telemetry</em>.</p>
 
-  <h3>D. In-App Purchases (Google Play Billing)</h3>
-  <p>If you purchase or subscribe to Pagelark Pro, the transaction is processed securely through Google Play In-App Billing. NetSoftTouch does not receive, store, or have access to your credit card, bank account, or billing details. All financial transactions are managed entirely by Google according to the Google Play Terms of Service.</p>
+  <h3>D. In-App Purchases (Google Play Billing and the App Store)</h3>
+  <p>If you purchase or subscribe to Pagelark Pro, the transaction is processed by the store you installed the app from. <strong>On Android</strong>, that is Google Play In-App Billing, under the Google Play Terms of Service. <strong>On iOS</strong>, purchases are made through the App Store: Apple processes the payment under its own terms, and the app receives only whether you hold Pro. NetSoftTouch does not receive, store, or have access to your credit card, bank account, Apple Account or Google account details, or billing details.</p>
 
-  <h3>E. On-Device Text Recognition and Language Detection (Google ML Kit, Tesseract)</h3>
-  <p>Camera OCR reads pages with Google ML Kit&rsquo;s text-recognition models and, for languages ML Kit does not cover, with the open-source Tesseract OCR engine and its public <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tessdata_fast</a> language models. Every one of these models is bundled inside the app: scanning, in any language, downloads nothing and makes no network request, and the image and the recognised text are never sent to Google or anyone else. To pick a voice for a document that does not say what language it is in, Pagelark uses Google ML Kit&rsquo;s Language Identification, which is also bundled and runs on your device; the text it looks at is never sent anywhere.</p>
+  <h3>E. On-Device Text Recognition and Language Detection</h3>
+  <p><strong>On Android</strong>, Camera OCR reads pages with Google ML Kit&rsquo;s text-recognition models and, for languages ML Kit does not cover, with the open-source Tesseract OCR engine and its public <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tessdata_fast</a> language models. Every one of these models is bundled inside the app: scanning, in any language, downloads nothing and makes no network request, and the image and the recognised text are never sent to Google or anyone else. To pick a voice for a document that does not say what language it is in, Pagelark uses Google ML Kit&rsquo;s Language Identification, which is also bundled and runs on your device; the text it looks at is never sent anywhere.</p>
   <p>Like other Google SDKs, ML Kit sends Google limited technical information to monitor and improve the SDK &mdash; device model and OS version, app package name and version, a per-installation identifier, which ML Kit feature was used, and performance and error metrics.</p>
+  <p><strong>On iOS</strong>, Pagelark does not use ML Kit. Pages are read with Apple&rsquo;s Vision framework, and Tesseract with the same bundled <code>tessdata_fast</code> models handles languages Vision does not cover. A document&rsquo;s language is detected with Apple&rsquo;s Natural Language framework. All three are part of the app or of iOS and run on your device. Scanning downloads nothing, and no image or text is sent anywhere.</p>
 
   <p>For more details on how Google collects and uses information when you use apps integrated with Google services, please review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
@@ -119,19 +123,29 @@
   <ul>
     <li><strong>User-Initiated Article Fetch:</strong> When you share or paste a web article URL to read, the app makes a direct HTTP request to download the HTML content from that specific web page to parse the article text. No personal identifiers or other documents are sent; as with any web request, that website receives your IP address and standard request information, and its own privacy policy applies. The app only connects over encrypted HTTPS.</li>
     <li><strong>Ad Serving &amp; Telemetry:</strong> Communicating with Google AdMob and Firebase as described above.</li>
-    <li><strong>Billing Verification:</strong> Verifying Pro entitlements with the Google Play Store.</li>
+    <li><strong>Billing Verification:</strong> Verifying Pro entitlements with Google Play (Android) or the App Store (iOS).</li>
   </ul>
   <p>Camera OCR is not among them: every text-recognition model ships inside the app (Section 2E), so scanning a page never uses the network.</p>
 
   <h3>Information shown to other parts of your device</h3>
   <p>These stay on your device and your own connected accessories, and are not sent to us:</p>
   <ul>
-    <li><strong>Playback controls:</strong> while a document is playing, its title is shown in the notification, on the lock screen, and to devices and apps you connect for media control, such as Bluetooth headsets, Android Auto, Wear OS or Google Assistant &mdash; the same as for any audio app.</li>
-    <li><strong>Audio exports:</strong> an exported MP3 or M4A file is saved to your device&rsquo;s shared <code>Music/Pagelark</code> folder (on Android 9 and older, to Pagelark&rsquo;s own Music folder), named after the document, so music players and file managers on your device can open it. It is never uploaded.</li>
+    <li><strong>Playback controls:</strong> while a document is playing, its title is shown in the notification, on the lock screen, and to devices and apps you connect for media control, such as Bluetooth headsets, Android Auto, Wear OS or Google Assistant (on Android), or Control Center, AirPods and Apple Watch (on iOS) &mdash; the same as for any audio app.</li>
+    <li><strong>Audio exports:</strong> an exported MP3 or M4A file is named after the document and is never uploaded. <strong>On Android</strong>, it is saved to your device&rsquo;s shared <code>Music/Pagelark</code> folder (on Android 9 and older, to Pagelark&rsquo;s own Music folder), so music players and file managers on your device can open it. <strong>On iOS</strong>, it is saved in an <code>Exports</code> folder inside Pagelark&rsquo;s own storage, which you can open in the Files app (<em>On My iPhone &rarr; Pagelark</em>) or through Finder on a connected Mac.</li>
+    <li><strong>Shared links (iOS):</strong> when you share a web link to Pagelark from another app, the share extension passes only that link to the app, on your device.</li>
   </ul>
 
   <h2>4. Device Permissions and Why They Are Needed</h2>
-  <p>Pagelark requests only the minimum permissions necessary for its functionality:</p>
+  <p>Pagelark requests only the minimum permissions necessary for its functionality.</p>
+  <h3>On iOS</h3>
+  <ul>
+    <li><strong>Camera:</strong> asked for only when you first scan a page. The photo is read on your device with the on-device text recognition described in Section 2E and is deleted straight after. It is never uploaded or shared. This feature is optional.</li>
+    <li><strong>Tracking (App Tracking Transparency):</strong> asked for only for the free version, so that Google can use the IDFA for more relevant ads (Section 2A). Saying no does not limit any feature.</li>
+    <li><strong>Photos and Files:</strong> pictures and documents are chosen with Apple&rsquo;s system pickers. Pagelark receives only the items you pick and has no access to the rest of your photo library or files, so iOS does not ask for a permission.</li>
+    <li><strong>Background audio:</strong> lets reading continue with the screen locked or while you use another app. It is not a permission prompt.</li>
+    <li>Network access needs no permission on iOS. It is used only for the purposes listed in Section 3.</li>
+  </ul>
+  <h3>On Android</h3>
   <ul>
     <li><code>android.permission.INTERNET</code>: Required for fetching web articles, displaying ads (free version), verifying Pro purchases, and transmitting crash/analytics diagnostics.</li>
     <li><code>android.permission.CAMERA</code>: Required solely when you choose to use the Camera OCR feature to extract text from a physical document via on-device text recognition (Google ML Kit and the open-source Tesseract OCR engine, both running entirely on your device). A captured page is kept only temporarily in the app&rsquo;s private cache while its text is read, and is then deleted; it is never uploaded or shared. This feature is optional.</li>
@@ -153,24 +167,25 @@
   <p>Your documents, their text, your reading progress, bookmarks, search history and settings are stored only on your device. We never receive them, so we hold no copy to delete:</p>
   <ul>
     <li>You can delete any document from the Pagelark library at any time within the app.</li>
-    <li>Clearing the app's data in Android Settings or uninstalling Pagelark permanently removes all locally stored documents, reading progress, and settings from your device.</li>
-    <li>Exported audio files in <code>Music/Pagelark</code> are ordinary files on your device and stay until you delete them.</li>
+    <li><strong>On Android</strong>, clearing the app's data in Android Settings or uninstalling Pagelark permanently removes all locally stored documents, reading progress, and settings from your device. Exported audio files in <code>Music/Pagelark</code> are ordinary files on your device and stay until you delete them.</li>
+    <li><strong>On iOS</strong>, deleting Pagelark from your iPhone or iPad removes everything it stored, including your library, reading progress, settings and the audio files in its <code>Exports</code> folder. Move any export you want to keep to another folder in the Files app first.</li>
+    <li><strong>Device backups (iOS):</strong> like most iOS apps, Pagelark&rsquo;s storage is included when you back up your device to iCloud or to a computer. Those backups are made by Apple and you, are covered by Apple&rsquo;s privacy policy, and are never sent to us.</li>
   </ul>
   <h3>B. Data collected by third-party services (cannot be deleted individually)</h3>
   <ul>
     <li>Analytics and crash data held by Google Firebase contain no document content and are not linked to your name, email address or any account. Because of that, we cannot single out one person&rsquo;s data to delete it on request; it is deleted automatically when the retention period set in Firebase expires. Selecting <em>DON'T SHARE</em> under <em>Settings &rarr; Privacy &amp; telemetry</em> stops any further collection straight away.</li>
-    <li>Data collected by Google AdMob is retained and handled by Google under the Google Privacy Policy linked above. You can reset your advertising ID in Android Settings &rarr; Privacy &rarr; Ads (or delete it, on Android 12 and later).</li>
+    <li>Data collected by Google AdMob is retained and handled by Google under the Google Privacy Policy linked above. On Android, you can reset your advertising ID in Android Settings &rarr; Privacy &rarr; Ads (or delete it, on Android 12 and later). On iOS, you can stop apps from reading the IDFA in Settings &rarr; Privacy &amp; Security &rarr; Tracking.</li>
   </ul>
 
   <h3>C. How Data Is Protected</h3>
   <ul>
     <li>Everything the app sends over the network &mdash; to Google&rsquo;s services and to websites you fetch &mdash; travels over encrypted connections (HTTPS/TLS); the app does not allow unencrypted network traffic.</li>
-    <li>Your documents and library are kept in the app&rsquo;s private storage, which Android prevents other apps from reading, and are excluded from Android cloud backup.</li>
+    <li>Your documents and library are kept in the app&rsquo;s private storage, which the operating system prevents other apps from reading. On Android, they are also excluded from Android cloud backup.</li>
     <li>We never receive your documents, so there is no copy of them on any server of ours to be exposed.</li>
   </ul>
 
   <h2>7. Your Privacy Rights (GDPR &amp; CCPA/CPRA)</h2>
-  <p>Depending on your location, you may have statutory rights regarding your personal information, including the right to access, rectify, delete, or restrict the processing of your data, and the right to opt out of targeted advertising. Your documents and reading data exist only on your device, where you can view and delete them directly. For analytics and crash reporting, <em>Settings &rarr; Privacy &amp; telemetry</em> lets you stop collection at any time; for advertising, <em>Privacy Options (Ad Consent)</em> in the same place lets you change or withdraw consent where it applies, and Android Settings lets you reset your advertising ID (or delete it, on Android 12 and later). The analytics and crash data already collected is pseudonymous: the app does not show us or you the identifier it is stored under, so we have no way to identify which records are yours and cannot access or delete them individually (Section 6B). It expires automatically at the end of its retention period. You are welcome to contact us with any privacy question.</p>
+  <p>Depending on your location, you may have statutory rights regarding your personal information, including the right to access, rectify, delete, or restrict the processing of your data, and the right to opt out of targeted advertising. Your documents and reading data exist only on your device, where you can view and delete them directly. For analytics and crash reporting, <em>Settings &rarr; Privacy &amp; telemetry</em> lets you stop collection at any time; for advertising, <em>Privacy Options (Ad Consent)</em> in the same place lets you change or withdraw consent where it applies. Android Settings lets you reset your advertising ID (or delete it, on Android 12 and later), and on iOS, <em>Settings &rarr; Privacy &amp; Security &rarr; Tracking</em> lets you allow or stop tracking at any time. The analytics and crash data already collected is pseudonymous: the app does not show us or you the identifier it is stored under, so we have no way to identify which records are yours and cannot access or delete them individually (Section 6B). It expires automatically at the end of its retention period. You are welcome to contact us with any privacy question.</p>
 
   <h2>8. Changes to This Privacy Policy</h2>
   <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this page periodically.</p>
@@ -182,6 +197,20 @@
     <li><strong>Email:</strong> <a href="mailto:nguyenminhthuanvnn@gmail.com">nguyenminhthuanvnn@gmail.com</a></li>
     <li><strong>Website:</strong> <a href="https://nguyenminhthuanvnn.github.io/pagelark/">https://nguyenminhthuanvnn.github.io/pagelark/</a></li>
   </ul>
+
+  <h2 id="vi" lang="vi">Tóm tắt bằng tiếng Việt</h2>
+  <div lang="vi">
+    <p>Đây là bản tóm tắt cho tiện đọc. Nếu có khác biệt, bản tiếng Anh ở trên là bản chính thức.</p>
+    <ul>
+      <li><strong>Tài liệu của bạn không rời khỏi máy.</strong> Việc mở file (PDF, EPUB, DOCX, TXT), nhận dạng chữ khi chụp trang, đọc bằng giọng nói và xuất file âm thanh đều chạy trên thiết bị. Pagelark không có tài khoản người dùng và không bao giờ tải nội dung tài liệu lên máy chủ.</li>
+      <li><strong>Quảng cáo (bản miễn phí):</strong> Google AdMob có thể thu thập mã quảng cáo (GAID trên Android; IDFA trên iOS, và chỉ khi bạn cho phép ở hộp thoại App Tracking Transparency), địa chỉ IP, vị trí ước lượng và dữ liệu tương tác quảng cáo. Trên iOS, bạn có thể đổi lựa chọn trong <em>Cài đặt &rarr; Quyền riêng tư &amp; Bảo mật &rarr; Theo dõi</em>. Bản Pro không hiện quảng cáo.</li>
+      <li><strong>Thống kê và báo lỗi:</strong> Firebase Analytics và Crashlytics chỉ nhận số liệu không chứa nội dung (loại định dạng, khoảng độ dài, màn hình đã mở…). Không bao giờ có chữ trong tài liệu, tên file, đường dẫn, địa chỉ web hay từ khóa tìm kiếm. Bạn có thể tắt trong <em>Settings &rarr; Privacy &amp; telemetry &rarr; Do not share</em>. Ở EEA, Anh và Thụy Sĩ, tính năng này mặc định tắt cho đến khi bạn đồng ý.</li>
+      <li><strong>Thanh toán:</strong> Google Play (Android) hoặc App Store (iOS) xử lý toàn bộ thanh toán. Chúng tôi chỉ biết bạn có Pro hay không.</li>
+      <li><strong>Quyền trên iOS:</strong> camera (chỉ khi chụp trang; ảnh được đọc trên máy rồi xóa ngay) và theo dõi quảng cáo (chỉ với bản miễn phí, từ chối vẫn dùng đầy đủ tính năng). Ảnh và file được chọn qua trình chọn của hệ thống, app không truy cập phần còn lại.</li>
+      <li><strong>Xóa dữ liệu:</strong> xóa app là xóa toàn bộ thư viện, tiến độ đọc và cài đặt (trên iOS gồm cả thư mục <code>Exports</code>). Dữ liệu thống kê không gắn với danh tính và tự xóa khi hết thời hạn lưu của Firebase.</li>
+      <li><strong>Liên hệ:</strong> <a href="mailto:nguyenminhthuanvnn@gmail.com">nguyenminhthuanvnn@gmail.com</a></li>
+    </ul>
+  </div>
 
   <footer>
     <a href="./">Pagelark Overview</a>
