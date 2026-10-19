@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stillscribe — Private AI Voice Notes</title>
+<meta name="description" content="Stillscribe records, transcribes and summarizes on your iPhone. Unlimited free transcription, no minute caps, no account, and nothing leaves your device. By NetSoftTouch.">
+<link rel="canonical" href="https://nguyenminhthuanvnn.github.io/stillscribe/">
+<link rel="icon" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon.png">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e3e6ea;
+    --fg: #16191d; --muted: #5c636d; --accent: #1a56db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101317; --surface: #171b21; --border: #272d36;
+      --fg: #e9ecf1; --muted: #9aa3af; --accent: #7aa2f7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 72px; }
+  .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin: 24px 0 36px; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .brand img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  h1 { font-size: 1.9rem; margin: 0; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 2px 0 0; font-size: 1rem; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .tag { color: var(--fg); margin: 0; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: 0.88rem; margin-top: 14px; }
+  a { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .item {
+    border: 1px solid var(--border); background: var(--surface);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .item strong { display: block; font-size: 0.95rem; font-weight: 600; }
+  .item span { color: var(--muted); font-size: 0.88rem; }
+  ul { padding-left: 20px; color: var(--muted); }
+  li { margin: 6px 0; }
+  li strong { color: var(--fg); }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--surface);
+    padding: 12px 16px; margin: 24px 0; border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; }
+  td { color: var(--muted); }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../">&larr; NetSoftTouch</a>
+
+  <header>
+    <div class="brand">
+      <img src="./icon.png" alt="Stillscribe app icon" width="72" height="72">
+      <div>
+        <h1>Stillscribe</h1>
+        <p class="sub">Private AI voice notes</p>
+      </div>
+    </div>
+    <p class="tag">Record meetings, lectures, interviews and voice memos. Stillscribe turns them into searchable transcripts and clear summaries, all on your iPhone. Transcription is free and unlimited, with no minute caps, no account and no upload.</p>
+    <p class="meta">By NetSoftTouch &middot; iPhone, iOS 26 or later &middot; English speech</p>
+  </header>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="item"><strong>Record anywhere</strong><span>Keeps recording with the screen locked; stop or pause from the Lock Screen and Dynamic Island</span></div>
+    <div class="item"><strong>Live transcript</strong><span>Words appear as people speak, and every recording is transcribed on the iPhone</span></div>
+    <div class="item"><strong>Unlimited and free</strong><span>No minute caps on recording or transcription, even on the free plan</span></div>
+    <div class="item"><strong>AI summaries</strong><span>Overview, key points, decisions and action items, written by Apple Intelligence on the device</span></div>
+    <div class="item"><strong>Templates</strong><span>Meeting, Lecture, Interview and Voice memo, or your own</span></div>
+    <div class="item"><strong>Highlights</strong><span>Star the moment while recording, then jump straight back to it</span></div>
+    <div class="item"><strong>Tap to listen</strong><span>Tap any line of the transcript to hear that moment</span></div>
+    <div class="item"><strong>Search everything</strong><span>Search all transcripts and open the matching line</span></div>
+    <div class="item"><strong>Import and share</strong><span>Bring in audio and video from Voice Memos, Zoom, WhatsApp or Files</span></div>
+    <div class="item"><strong>Reminders</strong><span>Send action items to Reminders with due dates filled in</span></div>
+    <div class="item"><strong>Export</strong><span>PDF, Markdown, plain text or SRT subtitles</span></div>
+    <div class="item"><strong>Face ID lock</strong><span>Keep your recordings behind Face ID</span></div>
+  </div>
+
+  <p class="note">
+    <strong>Nothing leaves your iPhone.</strong> Recording, transcription and summaries all run on the device, using Apple&rsquo;s on-device speech recognition and Apple Intelligence. Stillscribe has no account, no servers, no analytics and no ads. We never receive your audio, transcripts or summaries. See the <a href="./privacy-policy.html">Privacy Policy</a>.
+  </p>
+
+  <h2>Free and Pro</h2>
+  <table>
+    <tr><th>Free</th><td>Unlimited recording and transcription, search, highlights, import, 3 AI summaries every 7 days, plain-text export.</td></tr>
+    <tr><th>Pro</th><td>Unlimited AI summaries, your own summary templates, Reminders, PDF/Markdown/SRT export, search filters and Face ID lock.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Pro Monthly:</strong> $4.99 per month, renews automatically.</li>
+    <li><strong>Pro Yearly:</strong> $29.99 per year, renews automatically. New subscribers get a 7-day free trial, and the app reminds you a day before it ends.</li>
+    <li><strong>Pro Lifetime:</strong> $59.99, one-time purchase, no subscription.</li>
+  </ul>
+  <p class="meta">US prices; the App Store shows the price in your currency before you buy. Payment is charged to your Apple Account. Subscriptions renew unless cancelled at least 24 hours before the end of the current period. Manage or cancel in <em>Settings &rarr; [your name] &rarr; Subscriptions</em>. Full details in the <a href="./terms-of-use.html#subscriptions">Terms of Use</a>.</p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>iPhone with iOS 26 or later. Transcription is in English.</li>
+    <li>AI summaries need an iPhone that supports Apple Intelligence, with Apple Intelligence turned on. The app shows you how to turn it on. Recording, transcription, search and export work on every supported iPhone.</li>
+  </ul>
+
+  <h2>Legal &amp; Privacy</h2>
+  <ul>
+    <li><a href="./privacy-policy.html">Privacy Policy</a> &mdash; what the app does with your data (in short: it stays on your iPhone).</li>
+    <li><a href="./terms-of-use.html">Terms of Use</a> &mdash; the terms for using Stillscribe and buying Pro.</li>
+  </ul>
+
+  <h2 id="support">Support</h2>
+  <ul>
+    <li>Email <a href="mailto:nguyenminhthuanvnn@gmail.com?subject=Stillscribe%20support">nguyenminhthuanvnn@gmail.com</a> with questions, feature ideas or bug reports.</li>
+    <li>Please include your iPhone model, iOS version and the app version (shown in Stillscribe &rarr; Settings).</li>
+    <li>If the app crashed, tap <em>Settings &rarr; Send diagnostic report</em>. It contains technical details only, never your recordings or text, and you see the email and its attachments before anything is sent.</li>
+    <li>Summaries not available? Open <em>Settings &rarr; Apple Intelligence</em> in Stillscribe for a step-by-step guide. Apple Intelligence needs iPhone 15 Pro or newer, and your iPhone language and Siri language must match.</li>
+    <li>Moving to a new iPhone? Tap <em>Restore Purchases</em> in Settings to get Pro back.</li>
+  </ul>
+
+  <footer>
+    <a href="../">NetSoftTouch</a>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-use.html">Terms of Use</a>
+    <div style="margin-top:14px">&copy; 2026 NetSoftTouch</div>
+  </footer>
+
+</div>
+</body>
+</html>
