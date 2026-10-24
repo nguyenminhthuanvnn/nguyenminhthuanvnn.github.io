@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stillscribe for Android — Private AI Voice Notes</title>
+<meta name="description" content="Stillscribe for Android records, transcribes and summarizes on your phone. Unlimited free transcription in 18 languages, speaker labels, no account, and your recordings never leave the phone. By NetSoftTouch.">
+<link rel="canonical" href="https://nguyenminhthuanvnn.github.io/stillscribe/android/">
+<link rel="icon" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e3e6ea;
+    --fg: #16191d; --muted: #5c636d; --accent: #1a56db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101317; --surface: #171b21; --border: #272d36;
+      --fg: #e9ecf1; --muted: #9aa3af; --accent: #7aa2f7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 72px; }
+  .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin: 24px 0 36px; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .brand img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  h1 { font-size: 1.9rem; margin: 0; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 2px 0 0; font-size: 1rem; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .tag { color: var(--fg); margin: 0; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: 0.88rem; margin-top: 14px; }
+  a { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .item {
+    border: 1px solid var(--border); background: var(--surface);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .item strong { display: block; font-size: 0.95rem; font-weight: 600; }
+  .item span { color: var(--muted); font-size: 0.88rem; }
+  ul { padding-left: 20px; color: var(--muted); }
+  li { margin: 6px 0; }
+  li strong { color: var(--fg); }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--surface);
+    padding: 12px 16px; margin: 24px 0; border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; }
+  td { color: var(--muted); }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  footer a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../../">&larr; NetSoftTouch</a>
+
+  <header>
+    <div class="brand">
+      <img src="../icon.png" alt="Stillscribe app icon" width="72" height="72">
+      <div>
+        <h1>Stillscribe for Android</h1>
+        <p class="sub">Private AI voice notes</p>
+      </div>
+    </div>
+    <p class="tag">Record meetings, lectures, interviews and voice memos. Stillscribe turns them into searchable transcripts and clear summaries, all on your phone. Transcription is free and unlimited in 18 languages, with no minute caps, no account and no upload.</p>
+    <p class="meta">By NetSoftTouch &middot; Android 11 or later, 64-bit phones &middot; Coming to Google Play</p>
+  </header>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="item"><strong>Record anywhere</strong><span>Keeps recording with the screen off or in other apps; pause or stop from the notification, a Quick Settings tile or the widget</span></div>
+    <div class="item"><strong>Never lose a recording</strong><span>Audio is saved to a file as you record. If the phone or app stops, the recording is recovered</span></div>
+    <div class="item"><strong>Unlimited and free</strong><span>No minute caps on recording or transcription, even on the free plan</span></div>
+    <div class="item"><strong>18 languages</strong><span>Pick one or let the app detect it, including recordings that mix two languages</span></div>
+    <div class="item"><strong>Who said what</strong><span>Meetings are split by speaker; rename Speaker 1 to a real name</span></div>
+    <div class="item"><strong>AI summaries</strong><span>Overview, key points, decisions and action items, written by an AI model on the phone</span></div>
+    <div class="item"><strong>Templates</strong><span>Meeting, Lecture, Interview and Voice memo, or your own</span></div>
+    <div class="item"><strong>Tap to listen</strong><span>Tap any line of the transcript to hear that moment; star highlights while recording</span></div>
+    <div class="item"><strong>Search everything</strong><span>Search all transcripts and summaries and open the matching line</span></div>
+    <div class="item"><strong>Import and watched folders</strong><span>Share audio or video from any app, or let a folder (call recordings, a voice recorder) import new files by itself</span></div>
+    <div class="item"><strong>Calendar and tasks</strong><span>Send action items to your calendar or a task app, with due dates filled in</span></div>
+    <div class="item"><strong>Export</strong><span>PDF, Markdown, plain text or SRT subtitles, or save Markdown to a folder automatically (for example an Obsidian vault)</span></div>
+    <div class="item"><strong>Offline translation</strong><span>Translate a transcript and its summary on the phone</span></div>
+    <div class="item"><strong>App lock</strong><span>Keep your recordings behind your fingerprint, face or screen lock</span></div>
+  </div>
+
+  <p class="note">
+    <strong>Your recordings never leave your phone.</strong> Recording, transcription, speaker labels, summaries and translation all run on the device. Stillscribe has no account, no servers, no ads and no analytics of its own, and we never receive your audio, transcripts or summaries. The app downloads speech and AI models from Google Play; Google libraries in the app send Google anonymous technical data about how they run, never your content. Details in the <a href="./privacy-policy.html">Privacy Policy</a>.
+  </p>
+
+  <h2>Free and Pro</h2>
+  <table>
+    <tr><th>Free</th><td>Unlimited recording and transcription in every language, speaker labels, search, highlights, import and watched folders, 3 AI summaries every 7 days, plain-text export.</td></tr>
+    <tr><th>Pro</th><td>Unlimited AI summaries, your own summary templates, calendar and tasks, PDF/Markdown/SRT export, automatic export to a folder, offline translation, search filters and the app lock.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Pro Monthly:</strong> billed every month, renews automatically.</li>
+    <li><strong>Pro Yearly:</strong> billed every year, renews automatically. Eligible new subscribers may get a free trial, and the app reminds you a day before it ends.</li>
+    <li><strong>Pro Lifetime:</strong> one-time purchase, no subscription.</li>
+  </ul>
+  <p class="meta">Google Play shows the price in your currency, and any free trial, before you buy. Payment is charged to your Google account. Subscriptions renew unless cancelled before the end of the current period. Manage or cancel in <em>Google Play &rarr; Profile &rarr; Payments &amp; subscriptions &rarr; Subscriptions</em>. Full details in the <a href="./terms-of-use.html#subscriptions">Terms of Use</a>.</p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>A 64-bit Android phone with Android 11 or later.</li>
+    <li>Speech models download from Google Play the first time a language needs one (for English about 460 MB, for Vietnamese about 140 MB). Large downloads wait for Wi-Fi unless you choose mobile data. After that, recording and transcription work offline. Recordings made before the download are transcribed once it finishes.</li>
+    <li>AI summaries use Gemini Nano on phones that offer it. Other phones with enough memory can download an AI model (about 1 GB, only when you choose to); on slower phones, long summaries finish while the phone is charging. On phones with less memory, summaries are not available, and the app says so. Recording, transcription, search and export work on every supported phone.</li>
+  </ul>
+
+  <h2 id="credits">Open-source models</h2>
+  <p><strong>Powered by Moonshine AI.</strong> Vietnamese transcription uses the Moonshine base model, licensed under the Moonshine AI Community License, Copyright &copy; Moonshine AI Ltd. All Rights Reserved.</p>
+  <ul>
+    <li><strong>NVIDIA Parakeet TDT 0.6B v3</strong> (English and 24 European languages), &copy; NVIDIA, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, converted to ONNX and quantized by the sherpa-onnx project.</li>
+    <li><strong>OpenAI Whisper</strong> (other languages), MIT License.</li>
+    <li><strong>Qwen3 1.7B</strong> (AI summaries on phones without Gemini Nano), Apache License 2.0.</li>
+    <li><strong>sherpa-onnx</strong>, <strong>Silero VAD</strong>, <strong>pyannote</strong>, <strong>3D-Speaker</strong>, <strong>ONNX Runtime</strong> and <strong>LiteRT-LM</strong>.</li>
+  </ul>
+  <p class="meta">Full license texts are in the app: <em>Settings &rarr; About &rarr; Open-source licenses</em>.</p>
+
+  <h2>Legal &amp; Privacy</h2>
+  <ul>
+    <li><a href="./privacy-policy.html">Privacy Policy</a> &mdash; what the app does with your data (in short: your recordings stay on your phone).</li>
+    <li><a href="./terms-of-use.html">Terms of Use</a> &mdash; the terms for using Stillscribe and buying Pro.</li>
+  </ul>
+
+  <h2 id="support">Support</h2>
+  <ul>
+    <li>Email <a href="mailto:nguyenminhthuanvnn@gmail.com?subject=Stillscribe%20for%20Android%20support">nguyenminhthuanvnn@gmail.com</a> with questions, feature ideas or bug reports.</li>
+    <li>Please include your phone model, Android version and the app version (shown at the bottom of Stillscribe &rarr; Settings).</li>
+    <li>If the app crashed, tap <em>Settings &rarr; Send diagnostic report</em>. It contains technical details only, never your recordings or text, and you see all of it before you choose where to send it.</li>
+    <li>Summaries not available? Open <em>Settings &rarr; AI summaries</em> in Stillscribe to see how summaries work on your phone.</li>
+    <li>Recording stops in the background? Some phone makers close apps to save battery. The app shows how to allow Stillscribe to keep running.</li>
+    <li>New phone or reinstalled? Tap <em>Restore purchases</em> in Settings to get Pro back.</li>
+  </ul>
+
+  <footer>
+    <a href="../../">NetSoftTouch</a>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <a href="./terms-of-use.html">Terms of Use</a>
+    <div style="margin-top:14px">&copy; 2026 NetSoftTouch</div>
+  </footer>
+
+</div>
+</body>
+</html>
