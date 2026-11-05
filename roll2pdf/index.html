@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roll2PDF — NetSoftTouch</title>
 <meta name="description" content="Roll2PDF turns photos into one PDF and makes large PDFs smaller, on iPhone and iPad, entirely on the device. By NetSoftTouch.">
-<link rel="canonical" href="https://nguyenminhthuanvnn.github.io/photopdf/">
+<link rel="canonical" href="https://nguyenminhthuanvnn.github.io/roll2pdf/">
+<link rel="icon" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon.png">
 <style>
   :root {
     --bg: #ffffff; --surface: #f6f7f9; --border: #e3e6ea;
@@ -28,6 +30,9 @@
   header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin: 24px 0 36px; }
   h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
   h2 { font-size: 1.15rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .brand img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .brand h1 { margin: 0; }
   .tag { color: var(--muted); margin: 0; }
   .meta { color: var(--muted); font-size: 0.88rem; margin-top: 14px; }
   a { color: var(--accent); }
@@ -55,7 +60,10 @@
 <div class="wrap">
   <a class="back" href="../">&larr; NetSoftTouch</a>
   <header>
-    <h1>Roll2PDF</h1>
+    <div class="brand">
+      <img src="./icon.png" alt="Roll2PDF app icon" width="72" height="72">
+      <h1>Roll2PDF</h1>
+    </div>
     <p class="tag">Turn photos into one PDF and make large PDFs smaller, on iPhone and iPad. Everything happens on your device: no upload, no account and no ads.</p>
     <p class="meta">By NetSoftTouch &middot; Bundle ID <code>com.roll2pdf.app</code> &middot; English and Vietnamese</p>
   </header>
