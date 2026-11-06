@@ -80,13 +80,16 @@
   <ul>
     <li><strong>Photos:</strong> photos are chosen with Apple&rsquo;s system photo picker. Roll2PDF receives only the photos you select and cannot see the rest of your library, so iOS does not ask for a Photos permission.</li>
     <li><strong>Files:</strong> PDFs are chosen with Apple&rsquo;s system document picker. Roll2PDF receives only the file you select. Your original file is never changed.</li>
+    <li><strong>Share sheet and Open in (iPhone and iPad):</strong> when you choose Roll2PDF in the share sheet or the &ldquo;Open in&rdquo; menu of another app (such as Photos, Files, Mail or Safari), Roll2PDF receives only the photos or PDF you shared. The Roll2PDF share extension makes the PDF right there, on your device.</li>
+    <li><strong>Shortcuts and Siri (iPhone and iPad):</strong> the &ldquo;Compress PDF&rdquo; and &ldquo;Photos to PDF&rdquo; actions run on your device and return the new PDF only to the shortcut you run.</li>
+    <li><strong>Password-protected PDFs (iPhone and iPad):</strong> the password you type is used only to open that PDF and to protect the compressed copy with the same password. It is kept in memory while the file is open and is never saved or sent anywhere.</li>
     <li><strong>Android:</strong> photos are chosen with the Android photo picker and PDFs with the system file picker, so Roll2PDF asks for no photo, media or storage permission and receives only what you select. When you share photos or a PDF to Roll2PDF from another app, or open a PDF with it, Roll2PDF receives only those items.</li>
     <li><strong>Camera:</strong> Take Photo opens the system camera so you can take a page photo. On iPhone and iPad, iOS asks for the Camera permission the first time you tap it; you can turn it off at any time in the iOS Settings app, and Choose Photos keeps working without it. On Android, Take Photo opens your device&rsquo;s own camera app, so Roll2PDF does not ask for the Camera permission and never sees the camera itself. On both, the photo you take is saved only in Roll2PDF&rsquo;s temporary folder, not in your photo library, and is never uploaded.</li>
     <li><strong>Sharing and saving:</strong> a PDF you create leaves the app only when you share it (the iOS share sheet or the Android share menu) or save it with the system save dialog, and it goes only where you send it.</li>
   </ul>
 
   <h2>4. Storage and Deletion</h2>
-  <p>While you work, copies of the photos and PDFs you chose and the PDFs you create are kept in the app&rsquo;s temporary (cache) folder on your device. The app deletes this folder every time it starts, and iOS or Android may also clear it when storage is low. Deleting the app removes everything it stored.</p>
+  <p>While you work, copies of the photos and PDFs you chose and the PDFs you create are kept in the app&rsquo;s temporary (cache) folder on your device. The app deletes this folder every time it starts (the iOS share extension clears its own folder each time it opens and closes), and iOS or Android may also clear it when storage is low. Your default settings, such as the compression level and size limit, are stored only on your device; on iPhone and iPad they are shared between the app and its share extension. Deleting the app removes everything it stored.</p>
 
   <h2>5. Children</h2>
   <p>Roll2PDF is suitable for all ages and collects no information from anyone, including children.</p>
@@ -111,6 +114,8 @@
       <li><strong>Không thu thập dữ liệu.</strong> Roll2PDF không có tài khoản, quảng cáo, thống kê hay báo lỗi tự động, và không kết nối Internet.</li>
       <li><strong>Ảnh và PDF không rời khỏi máy.</strong> Ảnh bạn chọn hoặc chụp và file PDF bạn mở chỉ được xử lý trên thiết bị. File gốc không bị thay đổi.</li>
       <li><strong>Quyền truy cập:</strong> ảnh và file được chọn qua trình chọn của hệ thống (iPhone, iPad và Android), app chỉ nhận đúng mục bạn chọn và không thấy phần còn lại. Trên Android, app không xin quyền ảnh, bộ nhớ, camera hay Internet. Nút Chụp ảnh mở camera của hệ thống (trên iPhone/iPad, iOS hỏi quyền Camera ở lần đầu; trên Android, app mở app camera có sẵn nên không xin quyền); ảnh chụp chỉ nằm trong thư mục tạm của app, không vào thư viện ảnh.</li>
+      <li><strong>Chia sẻ, Mở bằng, Phím tắt (iPhone, iPad):</strong> khi bạn chọn Roll2PDF trong bảng Chia sẻ hoặc &ldquo;Mở bằng&rdquo; của app khác, app chỉ nhận đúng ảnh hoặc PDF bạn chia sẻ và tạo PDF ngay trên máy. Các hành động trong app Phím tắt cũng chạy trên máy và chỉ trả file cho phím tắt bạn chạy.</li>
+      <li><strong>PDF có mật khẩu (iPhone, iPad):</strong> mật khẩu bạn nhập chỉ dùng để mở file đó và đặt cùng mật khẩu cho bản nén; chỉ giữ trong bộ nhớ khi file đang mở, không lưu và không gửi đi đâu.</li>
       <li><strong>Lưu trữ:</strong> bản sao tạm thời nằm trong thư mục tạm của app và được xoá mỗi lần mở app. Xoá app là xoá hết.</li>
       <li><strong>Liên hệ:</strong> <a href="mailto:nguyenminhthuanvnn@gmail.com">nguyenminhthuanvnn@gmail.com</a></li>
     </ul>
