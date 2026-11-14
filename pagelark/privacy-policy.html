@@ -56,13 +56,13 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tag">How Pagelark collects, uses, and protects your information.</p>
-    <p class="meta">Effective date: November 10, 2026 &middot; Application: <strong>Pagelark</strong> for Android and iOS (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong> (Nguyen Minh Thuan)</p>
+    <p class="meta">Effective date: November 15, 2026 &middot; Application: <strong>Pagelark</strong> for Android and iOS (<code>com.pagelark.reader</code>) &middot; Developer: <strong>NetSoftTouch</strong> (Nguyen Minh Thuan)</p>
   </header>
 
   <p>This policy covers Pagelark on both Android (Google Play) and iPhone and iPad (the App Store). The two apps work the same way. Where they differ, the text says so with <strong>On Android</strong> or <strong>On iOS</strong>. A <a href="#vi">short summary in Vietnamese</a> is at the end.</p>
 
   <div class="note">
-    <strong>Summary:</strong> Pagelark collects no data. It has no ads, no analytics, no tracking and no user accounts. Your documents, scanned pages and audio exports are processed and stored only on your device and are never uploaded. The only time the app connects to the internet on its own behalf is when you ask it to fetch a web article, and then it connects directly to that website.
+    <strong>Summary:</strong> Pagelark has no ads, no analytics, no tracking and no user accounts. Your documents, scanned pages and audio exports are processed and stored only on your device and are never uploaded. <strong>On iOS</strong>, the app collects no data. <strong>On Android</strong>, the only data that leaves the device is the limited technical diagnostics Google ML Kit sends to Google (Section 2B); it never includes your documents, images or text. This policy describes Pagelark 1.3.0 and later; earlier versions showed ads and used Google AdMob and Firebase.
   </div>
 
   <h2>1. Information We Do Not Collect</h2>
@@ -71,7 +71,7 @@
     <li><strong>Text-to-speech audio:</strong> speech is generated on your device by its built-in text-to-speech engine. <strong>On Android</strong>, this is the system engine (such as Google Text-to-Speech), and Pagelark only picks voices that the engine reports as working offline. <strong>On iOS</strong>, Pagelark uses Apple&rsquo;s built-in voices, which run on the device. The text being read is never sent to a cloud speech service.</li>
     <li><strong>Accounts:</strong> Pagelark has no registration or login and never asks for your name, email address or password.</li>
     <li><strong>Your library, reading progress and searches:</strong> documents, bookmarks, reading positions, favourites and the words you search for stay in the app&rsquo;s private database on your device.</li>
-    <li><strong>Usage and advertising data:</strong> Pagelark contains no advertising, analytics or crash-reporting SDK. It does not read your device&rsquo;s advertising identifier, does not track you across apps or websites, and does not send usage statistics to us or to anyone else.</li>
+    <li><strong>Usage and advertising data:</strong> Pagelark contains no advertising, analytics or crash-reporting SDK. It does not read your device&rsquo;s advertising identifier, does not track you across apps or websites, and does not send usage statistics to us. The only exception is the ML Kit diagnostics on Android described in Section 2B.</li>
   </ul>
 
   <h2>2. Services the App Relies On</h2>
@@ -81,8 +81,7 @@
 
   <h3>B. On-Device Text Recognition and Language Detection</h3>
   <p><strong>On Android</strong>, Camera OCR reads pages with Google ML Kit&rsquo;s text-recognition models and, for languages ML Kit does not cover, with the open-source Tesseract OCR engine and its public <a href="https://github.com/tesseract-ocr/tessdata_fast" target="_blank" rel="noopener">tessdata_fast</a> language models. All of these models are bundled inside the app: scanning, in any language, downloads nothing, and the image and the recognised text are never sent to Google or anyone else. To pick a voice for a document that does not say what language it is in, Pagelark uses Google ML Kit&rsquo;s Language Identification, which is also bundled and runs on your device.</p>
-  <!-- TODO (Android phase): confirm whether ML Kit's own SDK telemetry is turned off or still sent; keep or remove the next paragraph to match. -->
-  <p>Like other Google SDKs, ML Kit may send Google limited technical information to monitor and improve the SDK &mdash; device model and OS version, app package name and version, which ML Kit feature was used, and performance and error metrics. It never includes your images or text.</p>
+  <p>Like other Google SDKs, ML Kit sends Google limited technical information to monitor and improve the SDK &mdash; device model and OS version, app package name and version, a per-installation identifier, which ML Kit feature was used, and performance and error metrics. It never includes your images or text, is not used for advertising, and there is no setting to turn it off. See Google&rsquo;s <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">ML Kit data disclosure</a>.</p>
   <p><strong>On iOS</strong>, Pagelark does not use ML Kit. Pages are read with Apple&rsquo;s Vision framework, and Tesseract with the same bundled <code>tessdata_fast</code> models handles languages Vision does not cover. A document&rsquo;s language is detected with Apple&rsquo;s Natural Language framework. All of this runs on your device; no image or text is sent anywhere.</p>
 
   <h3>C. Crash Reports You Choose to Send</h3>
@@ -95,6 +94,7 @@
     <li><strong>Web articles you ask for:</strong> when you share or paste a web address, the app downloads that page directly from its website over HTTPS to extract the article text. No personal identifiers or other documents are sent. As with any web request, that website receives your IP address and standard request information, and its own privacy policy applies.</li>
     <li><strong>Purchases:</strong> buying, restoring and checking Pagelark Pro, through Google Play (Android) or the App Store (iOS).</li>
     <li><strong>Links you open:</strong> the privacy policy, terms of use and store pages open in your browser or store app.</li>
+    <li><strong>ML Kit diagnostics (Android only):</strong> the technical information described in Section 2B.</li>
   </ul>
   <p>Camera OCR, reading aloud and audio export never use the network.</p>
 
@@ -116,14 +116,15 @@
     <li><strong>Background audio:</strong> lets reading continue with the screen locked or while you use another app. It is not a permission prompt.</li>
     <li>Pagelark never shows the App Tracking Transparency prompt, because it does not track you.</li>
   </ul>
-  <!-- TODO (Android phase): re-check this list against the merged manifest after removing AdMob and Firebase. -->
   <h3>On Android</h3>
   <ul>
-    <li><code>android.permission.INTERNET</code>: fetching web articles you ask for and verifying Pro purchases.</li>
+    <li><code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code>: fetching web articles you ask for, verifying Pro purchases, and the ML Kit diagnostics in Section 2B.</li>
     <li><code>android.permission.CAMERA</code>: only when you use Camera OCR. A captured page is kept temporarily in the app&rsquo;s private cache while its text is read on the device, then deleted. It is never uploaded or shared.</li>
     <li><code>android.permission.POST_NOTIFICATIONS</code> and <code>android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: media controls in the notification drawer and on the lock screen during background playback.</li>
     <li><code>android.permission.FOREGROUND_SERVICE_MEDIA_PROCESSING</code>: lets an audio export you started finish, with a progress notification, if you leave the app.</li>
+    <li><code>android.permission.FOREGROUND_SERVICE</code>: required by Android for the two foreground services above.</li>
     <li><code>android.permission.WAKE_LOCK</code>: keeps the device awake while audio is playing.</li>
+    <li><code>android.permission.VIBRATE</code>: a short vibration to confirm that shaking the phone extended the sleep timer.</li>
     <li><code>com.android.vending.BILLING</code>: required by Google Play Billing to sell and verify Pagelark Pro.</li>
     <li><strong>Storage / document access:</strong> Pagelark uses the Android system file picker, so you choose specific files without granting access to your whole storage.</li>
   </ul>
@@ -168,7 +169,7 @@
   <div lang="vi">
     <p>Đây là bản tóm tắt cho tiện đọc. Nếu có khác biệt, bản tiếng Anh ở trên là bản chính thức.</p>
     <ul>
-      <li><strong>Pagelark không thu thập dữ liệu.</strong> Không quảng cáo, không phân tích, không theo dõi, không tài khoản người dùng.</li>
+      <li><strong>Không quảng cáo, không phân tích, không theo dõi, không tài khoản người dùng.</strong> Trên iOS, app không thu thập dữ liệu. Trên Android, chỉ có thông tin kỹ thuật mà Google ML Kit gửi về Google (mẫu máy, phiên bản, mã cài đặt, số liệu hiệu năng), không bao giờ gồm tài liệu, ảnh hay chữ của bạn.</li>
       <li><strong>Tài liệu của bạn không rời khỏi máy.</strong> Mở file (PDF, EPUB, DOCX, TXT), nhận dạng chữ khi chụp trang, đọc bằng giọng nói và xuất file âm thanh đều chạy trên thiết bị. Nội dung tài liệu không bao giờ bị tải lên máy chủ.</li>
       <li><strong>Kết nối mạng:</strong> app hoạt động offline. Chỉ kết nối khi bạn nhập một bài báo từ link (kết nối thẳng tới trang web đó) và khi mua, khôi phục gói Pro qua Google Play hoặc App Store.</li>
       <li><strong>Báo cáo lỗi (iOS):</strong> báo cáo lỗi hoặc treo do iOS cung cấp được giữ trên máy, chỉ có thông tin kỹ thuật. Chỉ gửi khi bạn chọn <em>Settings &rarr; Send diagnostic report</em> và tự bấm gửi email.</li>
