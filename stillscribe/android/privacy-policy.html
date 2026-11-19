@@ -62,26 +62,27 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="tag">How Stillscribe for Android handles your recordings, transcripts and other information.</p>
-    <p class="meta">Effective date: October 24, 2026 &middot; Application: Stillscribe for Android &middot; Developer: NetSoftTouch (Nguyen Minh Thuan)</p>
+    <p class="meta">Effective date: November 19, 2026 &middot; Application: Stillscribe for Android &middot; Developer: NetSoftTouch (Nguyen Minh Thuan)</p>
   </header>
 
-  <p>This Privacy Policy explains how Stillscribe for Android (&ldquo;the App&rdquo;), provided by NetSoftTouch (&ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;), handles information when you use it, including its notification controls, Quick Settings tile and home screen widget. Stillscribe for iPhone has its <a href="../privacy-policy.html">own Privacy Policy</a>.</p>
+  <p>This Privacy Policy explains how Stillscribe for Android (&ldquo;the App&rdquo;), provided by NetSoftTouch (&ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;), handles information when you use it, including its recording notification. Stillscribe for iPhone has its <a href="../privacy-policy.html">own Privacy Policy</a>.</p>
 
   <p class="note">
-    <strong>Summary:</strong> Stillscribe records, transcribes, labels speakers, summarizes and translates entirely on your phone. It has no user accounts and no servers of ours, and contains no advertising and no analytics of our own. Your audio, transcripts, summaries and notes are stored only on your phone, and we never receive them. Google libraries that the App uses send Google technical data about how they run (Section 5); this never includes your recordings or text.
+    <strong>Summary:</strong> Stillscribe records, transcribes, summarizes and answers questions about your recordings entirely on your phone. It has no user accounts and no servers of ours, and contains no advertising and no analytics of our own. Your audio, transcripts, summaries and notes are stored only on your phone, and we never receive them. Google libraries that the App uses send Google technical data about how they run (Section 5); this never includes your recordings or text.
   </p>
 
   <h2>1. Information we do not collect</h2>
   <p>We do not collect any information from the App. In particular:</p>
   <ul>
-    <li><strong>Audio recordings:</strong> recordings you make, and audio or video files you import, share into the App or place in a watched folder, are saved in the App&rsquo;s private storage on your phone and are never uploaded.</li>
-    <li><strong>Transcripts and speaker labels:</strong> speech is turned into text on the phone by speech models that run inside the App (and, for live English text on Android 12 or later, by Google&rsquo;s on-device ML Kit speech recognition). The audio is not sent to a cloud speech service.</li>
-    <li><strong>AI summaries:</strong> summaries, key points, decisions and action items are generated on the phone, either by Gemini Nano through Android&rsquo;s AICore system service, or by an AI model downloaded to the phone. Your transcript is not sent to us, to Google&rsquo;s servers or to any AI provider for this.</li>
-    <li><strong>Translation:</strong> translation runs on the phone with Google&rsquo;s ML Kit translation models. Your text is not sent anywhere to be translated.</li>
-    <li><strong>Notes and settings:</strong> titles, highlights, speaker names, custom words, summary templates, search terms and settings stay on your phone.</li>
+    <li><strong>Audio recordings:</strong> recordings you make, and audio or video files you import or share into the App, are saved in the App&rsquo;s private storage on your phone and are never uploaded. From a video, the App keeps only the sound.</li>
+    <li><strong>Transcripts:</strong> speech is turned into text on the phone by speech models that run inside the App (and, for live English text on Android 12 or later, by Google&rsquo;s on-device ML Kit speech recognition). The audio is not sent to a cloud speech service.</li>
+    <li><strong>AI summaries:</strong> summaries, key points, decisions and action items are generated on the phone by Gemini Nano, Google&rsquo;s on-device AI model, through Android&rsquo;s AICore system service. Your transcript is not sent to us, to Google&rsquo;s servers or to any AI provider for this. On phones without Gemini Nano, the App does not make summaries.</li>
+    <li><strong>Questions you ask (Ask):</strong> questions you ask about a recording, and the answers, are generated on the phone by Gemini Nano from that recording&rsquo;s transcript. They are stored with the recording on your phone and are not sent to us, to Google&rsquo;s servers or to any AI provider.</li>
+    <li><strong>Notes and settings:</strong> titles, highlights, summary templates you create, search terms and settings stay on your phone.</li>
     <li><strong>Accounts:</strong> the App has no sign-up or login and never asks for your name, email address, phone number or password.</li>
     <li><strong>Advertising and tracking:</strong> the App contains no advertising software, does not use the advertising ID, and does not track you across other companies&rsquo; apps or websites.</li>
-    <li><strong>Location, contacts and photos:</strong> the App does not access them.</li>
+    <li><strong>Photos:</strong> the App never reads your photos or videos. When you import a video, you pick it in Android&rsquo;s photo picker and the App receives only that video. The App can add an image you create (a summary or quote card) to your Pictures folder when you tap <em>Save</em>, as described in Section 3.</li>
+    <li><strong>Location, contacts and calendar:</strong> the App does not access them.</li>
   </ul>
 
   <h2>2. Data stored on your phone</h2>
@@ -89,10 +90,10 @@
   <table>
     <tr><th>Data</th><td>Purpose</td></tr>
     <tr><th>Audio files</th><td>The original recording, kept so you can listen again. Recordings are written to a file first so a recording is never lost.</td></tr>
-    <tr><th>Transcripts, summaries, translations</th><td>To show, search and export your notes.</td></tr>
-    <tr><th>Templates, highlights, speaker names, custom words, settings</th><td>To remember your choices.</td></tr>
-    <tr><th>Free summary count</th><td>To count the free plan&rsquo;s 3 summaries every 7 days. It is a count and dates only.</td></tr>
-    <tr><th>Speech, AI and translation models</th><td>Downloaded once so that everything can run on the phone. They contain no information about you.</td></tr>
+    <tr><th>Transcripts, summaries, questions and answers</th><td>To show, search and export your notes.</td></tr>
+    <tr><th>Templates, highlights, settings</th><td>To remember your choices.</td></tr>
+    <tr><th>Free plan counts</th><td>To count the free plan&rsquo;s 3 summaries every 7 days and its free questions per recording. They are counts and dates only.</td></tr>
+    <tr><th>Speech models</th><td>Downloaded once from Google Play so that transcription can run on the phone. They contain no information about you.</td></tr>
     <tr><th>Crash reports</th><td>Technical details of recent crashes (stack traces, app and Android version, phone model). They contain no audio or text, stay on the phone, and are sent only if you choose to, as described in Section 4.</td></tr>
   </table>
   <p>We have no access to any of this data. It stays on the phone until you delete it. The App does not take part in Android backup, so its data is not copied to your Google account.</p>
@@ -101,17 +102,15 @@
   <p>The App asks for permissions only when you use a feature that needs them. You can change them at any time in Android <em>Settings &rarr; Apps &rarr; Stillscribe &rarr; Permissions</em>.</p>
   <ul>
     <li><strong>Microphone:</strong> to record audio. When you start a recording, the App keeps recording in the background (for example with the screen off) until you stop it, and Android shows that the microphone is in use and a notification for the recording.</li>
-    <li><strong>Notifications</strong> (optional): to show recording, transcription and summary progress, to tell you when a summary is ready, and, if you start a free trial of Pro Yearly, one local reminder a day before the trial ends. All notifications are created on your phone.</li>
+    <li><strong>Notifications</strong> (optional): to show recording, transcription and summary progress, to tell you when a transcript or summary is ready, and, if you start a free trial of Pro Yearly, one local reminder a day before the trial ends. All notifications are created on your phone; no notification server is involved.</li>
     <li><strong>Fingerprint, face or screen lock</strong> (optional): only if you turn on the App lock. Android handles the check; the App only receives a yes or no answer and never has access to your biometric data.</li>
-    <li><strong>Folders</strong> (optional): when you choose a watched folder or an export folder, you pick it in Android&rsquo;s folder picker, and the App can access only that folder. Files you import or share come through Android&rsquo;s file picker or Share menu; the App only receives the files you pick or share.</li>
   </ul>
-  <p>Sending action items to your calendar opens your calendar app with the event filled in; the App does not read your calendar.</p>
+  <p>Some features need no permission at all. Files you import or share come through Android&rsquo;s file picker, photo picker or Share menu, and the App receives only the files you pick or share. Saving a summary or quote card adds one image to <em>Pictures/Stillscribe</em> on your phone; the App cannot see your other pictures. Sending action items to your calendar opens your calendar app with the event filled in; the App does not read your calendar.</p>
 
   <h2>4. When information leaves your phone</h2>
   <p>The App never sends your recordings, transcripts, summaries or notes anywhere by itself. Information leaves your phone only in these cases:</p>
   <ul>
-    <li><strong>Exporting and sharing:</strong> when you export or share a note (PDF, Markdown, plain text or SRT), or send action items to another app, it goes to the app or person you choose. What happens next is governed by that app or service.</li>
-    <li><strong>Automatic export to a folder</strong> (Pro, optional): if you turn it on, the App saves Markdown files to the folder you picked. If another app syncs that folder (for example a cloud drive or a notes app), that app may upload them under its own terms.</li>
+    <li><strong>Exporting and sharing:</strong> when you export or share a note (PDF, Markdown, plain text or SRT), copy text, share an audio file, share a summary or quote card image, or send action items to another app, it goes to the app or person you choose through Android&rsquo;s Share menu or clipboard. What happens next is governed by that app or service. Exports and cards include a short &ldquo;Stillscribe&rdquo; credit line, which Pro users can turn off.</li>
     <li><strong>Diagnostic reports:</strong> if you tap <em>Send diagnostic report</em> in Settings, the App shows you the full report first and then opens Android&rsquo;s Share menu so you can choose how to send it. It contains technical details only, never recordings or text. We use these reports only to find and fix bugs, and delete them when they are no longer needed for that.</li>
     <li><strong>Emails to us:</strong> if you email us, we receive your email address and what you write, and use them only to answer you.</li>
     <li><strong>Google technical data:</strong> described in Section 5.</li>
@@ -121,8 +120,8 @@
   <p>The App uses services and libraries from Google. When they contact Google, they are operated by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, not by us:</p>
   <ul>
     <li><strong>Google Play purchases:</strong> purchases and subscriptions of Stillscribe Pro are processed by Google Play. We never see your payment details, name or Google account. The App receives only the purchase status from Google Play Billing so it can unlock Pro.</li>
-    <li><strong>Model downloads:</strong> speech and AI models are downloaded from Google Play (Play Asset Delivery) the first time they are needed, and translation and speech-recognition language packs from Google through ML Kit. Gemini Nano is downloaded and managed by Android&rsquo;s AICore. These downloads only fetch models; they do not contain your recordings or text.</li>
-    <li><strong>ML Kit technical data:</strong> the App uses Google&rsquo;s ML Kit for live English text, language detection, translation and Gemini Nano summaries. ML Kit processes your audio and text on the phone and does not send them or its results to Google. Google states that ML Kit sends Google technical data so it can debug and improve ML Kit: device information (manufacturer, model, Android version, available ML hardware), app information (package name and version), a per-installation identifier, performance metrics such as latency, and error codes. This data is encrypted in transit and is not linked to your name or account by us. See <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a>. On Google Play, the App&rsquo;s Data safety section lists this data.</li>
+    <li><strong>Model downloads:</strong> speech models are downloaded from Google Play (Play Asset Delivery): the English model right after you install the App, and the model for other languages the first time you need it. Gemini Nano and the live English speech recognition are downloaded and managed by Android and Google Play services. These downloads only fetch models; they do not contain your recordings or text.</li>
+    <li><strong>ML Kit technical data:</strong> the App uses Google&rsquo;s ML Kit for live English text and for Gemini Nano summaries and Ask. ML Kit processes your audio and text on the phone and does not send them or its results to Google. Google states that ML Kit sends Google technical data so it can debug and improve ML Kit: device information (manufacturer, model, Android version, available ML hardware), app information (package name and version), a per-installation identifier, performance metrics such as latency, error codes and the configured language. This data is encrypted in transit and is not linked to your name or account by us. See <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a>. On Google Play, the App&rsquo;s Data safety section lists this data.</li>
     <li><strong>Crash data from Google Play:</strong> if you have chosen to share usage and diagnostics with Google on your phone, Google may share crash and performance data about the App with developers through Google Play Console, under Google&rsquo;s own terms.</li>
   </ul>
 
@@ -131,8 +130,8 @@
 
   <h2>7. Data retention and deletion</h2>
   <ul>
-    <li><strong>A recording:</strong> delete it in the App. Its audio file, transcript, summary and translations are removed from your phone. Files the App already exported or shared are not affected.</li>
-    <li><strong>Downloaded models:</strong> remove them in <em>Settings &rarr; Speech models</em>; they download again when needed.</li>
+    <li><strong>A recording:</strong> delete it in the App. Its audio file, transcript, summary, questions and answers are removed from your phone. Files and images the App already exported, saved or shared are not affected.</li>
+    <li><strong>Downloaded speech models:</strong> remove them in <em>Settings &rarr; Speech models</em>; they download again when needed.</li>
     <li><strong>Everything:</strong> uninstalling the App, or clearing its storage in Android Settings, removes all of its data from your phone.</li>
     <li><strong>Emails and diagnostic reports you sent us:</strong> email us and we will delete them.</li>
   </ul>
