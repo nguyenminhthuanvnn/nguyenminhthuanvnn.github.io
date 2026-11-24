@@ -6,6 +6,15 @@
 <title>Stillscribe — Private AI Voice Notes</title>
 <meta name="description" content="Stillscribe records, transcribes and summarizes on your iPhone or iPad, in 9 languages. Unlimited free transcription, no minute caps, no account, and nothing leaves your device. By NetSoftTouch.">
 <link rel="canonical" href="https://nguyenminhthuanvnn.github.io/stillscribe/">
+<meta name="apple-itunes-app" content="app-id=6824213275">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stillscribe — Private AI Voice Notes">
+<meta property="og:description" content="Record, transcribe and summarize on your iPhone or iPad, in 9 languages. Free, unlimited transcripts. Nothing uploaded.">
+<meta property="og:url" content="https://nguyenminhthuanvnn.github.io/stillscribe/">
+<meta property="og:image" content="https://nguyenminhthuanvnn.github.io/stillscribe/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="514">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./icon.png">
 <link rel="apple-touch-icon" href="./icon.png">
 <style>
@@ -55,6 +64,20 @@
   th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { font-weight: 600; }
   td { color: var(--muted); }
+  .cta {
+    display: inline-block; margin-top: 18px; padding: 11px 20px; border-radius: 12px;
+    background: var(--fg); color: var(--bg); text-decoration: none; font-weight: 600; font-size: 0.98rem;
+  }
+  .cta:hover { opacity: 0.85; }
+  .shots {
+    display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin: 0 -20px 8px; padding: 0 20px 12px;
+  }
+  .shots img {
+    flex: none; width: 210px; height: auto; aspect-ratio: 598 / 1300;
+    border-radius: 18px; border: 1px solid var(--border); scroll-snap-align: start;
+  }
+  .end { text-align: center; margin-top: 48px; }
   footer {
     margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border);
     color: var(--muted); font-size: 0.9rem;
@@ -77,7 +100,16 @@
     </div>
     <p class="tag">Record meetings, lectures, interviews and voice memos. Stillscribe turns them into searchable transcripts and clear summaries, all on your iPhone or iPad. Transcription is free and unlimited, with no minute caps, no account and no upload.</p>
     <p class="meta">By NetSoftTouch &middot; iPhone and iPad, iOS 26 or later &middot; 9 spoken languages</p>
+    <a class="cta" href="https://apps.apple.com/us/app/stillscribe-voice-notes-ai/id6824213275">Get Stillscribe on the App Store</a>
   </header>
+
+  <div class="shots" aria-label="Screenshots">
+    <img src="./img/01-live.webp" width="598" height="1300" alt="Live transcript while recording a lecture, with no minute limits">
+    <img src="./img/02-summary.webp" width="598" height="1300" loading="lazy" alt="AI summary of a meeting with overview, key facts and key points">
+    <img src="./img/03-ask.webp" width="598" height="1300" loading="lazy" alt="Asking a recording a question and getting an answer with times">
+    <img src="./img/04-private.webp" width="598" height="1300" loading="lazy" alt="Everything stays on the device: no account, no upload">
+    <img src="./img/06-library.webp" width="598" height="1300" loading="lazy" alt="Library of recordings with search">
+  </div>
 
   <h2>What it does</h2>
   <div class="grid">
@@ -137,6 +169,11 @@
     <li>Summaries not available? Open <em>Settings &rarr; Apple Intelligence</em> in Stillscribe for a step-by-step guide. Apple Intelligence needs an iPhone 15 Pro, iPhone 15 Pro Max, iPhone 16 or later, or an iPad with M1 or later or iPad mini (A17 Pro), and your device language and Siri language must match.</li>
     <li>Moving to a new iPhone or iPad? Tap <em>Restore Purchases</em> in Settings to get Pro back.</li>
   </ul>
+
+  <div class="end">
+    <p class="meta">Free to download. Recording and transcription stay free and unlimited.</p>
+    <a class="cta" href="https://apps.apple.com/us/app/stillscribe-voice-notes-ai/id6824213275">Get Stillscribe on the App Store</a>
+  </div>
 
   <footer>
     <a href="../">NetSoftTouch</a>
